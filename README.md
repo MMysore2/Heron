@@ -1,7 +1,9 @@
 # Heron
 Sentiment Analysis of UC Davis Professors
 
-f10.py\n
+Usage Note: Run f10.py before ProfCompare.py
+
+**f10.py**
 We used this youtube video for inspiration on how to use selenium to webscrape stuff from ratemyprofessor:
 https://www.youtube.com/watch?v=mWUOdV2nMOk
 
@@ -21,7 +23,7 @@ It uses the pandas to download a csv for the data.
 -The code will download a csv with all the professor reviews, the sentiment for each review, and the average sentiment across reviews, a pie chart displaying relative numbers of positive, negative, and neutral reviews, and a histogram with the distribution of sentiment for the reviews,  for all the professor links in the list of urls.
 
 
-ProfCompare.py
+**ProfCompare.py**
 
 READ BEFORE USING:
 Each path name must be changed to where each csv file is stored on your computer.
