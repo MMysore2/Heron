@@ -27,32 +27,32 @@ def listToString(s):
     return str1
 
 
-dataset_Butner = pd.read_csv("C:\\Users\\mysor\\Downloads\\rmp_butner.csv")
+dataset_Butner = pd.read_csv("C:\\Users\\rmp_butner.csv")
 data_Butner = dataset_Butner.iloc[:,1:2].values
 Butner = str(listToString(data_Butner))
 blob_Butner = TextBlob(Butner)
 
-dataset_Posnett = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Daryl Posnett.csv")
+dataset_Posnett = pd.read_csv("C:\\Users\\rmp_Daryl Posnett.csv")
 data_Posnett = dataset_Posnett.iloc[:,1:2].values
 Posnett = str(listToString(data_Posnett))
 blob_Posnett = TextBlob(Posnett)
 
-dataset_Solares = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Edwin Solares.csv")
+dataset_Solares = pd.read_csv("C:\\Users\\rmp_Edwin Solares.csv")
 data_Solares = dataset_Solares.iloc[:,1:2].values
 Solares = str(listToString(data_Solares))
 blob_Solares = TextBlob(Solares)
 
-dataset_Wu = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Felix Wu.csv")
+dataset_Wu = pd.read_csv("C:\\Users\\rmp_Felix Wu.csv")
 data_Wu = dataset_Wu.iloc[:,1:2].values
 Wu = str(listToString(data_Wu))
 blob_Wu = TextBlob(Wu)
 
-dataset_Porquet = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Joël Porquet.csv")
+dataset_Porquet = pd.read_csv("C:\\Users\\rmp_Joël Porquet.csv")
 data_Porquet = dataset_Porquet.iloc[:,1:2].values
 Porquet = str(listToString(data_Porquet))
 blob_Porquet = TextBlob(Porquet)
 
-dataset_Stevens = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Kristian Stevens.csv")
+dataset_Stevens = pd.read_csv("C:\\Users\\rmp_Kristian Stevens.csv")
 data_Stevens = dataset_Stevens.iloc[:,1:2].values
 Stevens = str(listToString(data_Stevens))
 blob_Stevens = TextBlob(Stevens)
@@ -62,37 +62,37 @@ data_Eiselt = dataset_Eiselt.iloc[:,1:2].values
 Eiselt = str(listToString(data_Eiselt))
 blob_Eiselt = TextBlob(Eiselt)
 
-dataset_Ma = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Kwan-Liu Ma.csv")
+dataset_Ma = pd.read_csv("C:\\Users\\rmp_Kwan-Liu Ma.csv")
 data_Ma = dataset_Ma.iloc[:,1:2].values
 Ma = str(listToString(data_Ma))
 blob_Ma = TextBlob(Ma)
 
-dataset_Franklin = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Matthew Franklin.csv")
+dataset_Franklin = pd.read_csv("C:\\Users\\rmp_Matthew Franklin.csv")
 data_Franklin = dataset_Franklin.iloc[:,1:2].values
 Franklin = str(listToString(data_Franklin))
 blob_Franklin = TextBlob(Franklin)
 
-dataset_Sadoghi = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Mohammad Sadoghi.csv")
+dataset_Sadoghi = pd.read_csv("C:\\Users\\rmp_Mohammad Sadoghi.csv")
 data_Sadoghi = dataset_Sadoghi.iloc[:,1:2].values
 Sadoghi = str(listToString(data_Sadoghi))
 blob_Sadoghi = TextBlob(Sadoghi)
 
-dataset_Rafatirad = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Setareh Rafatirad.csv")
+dataset_Rafatirad = pd.read_csv("C:\\Users\\rmp_Setareh Rafatirad.csv")
 data_Rafatirad = dataset_Rafatirad.iloc[:,1:2].values
 Rafatirad = str(listToString(data_Rafatirad))
 blob_Rafatirad = TextBlob(Rafatirad)
 
-dataset_Bhaskar = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Vidhyacharan Bhaskar.csv")
+dataset_Bhaskar = pd.read_csv("C:\\Users\\rmp_Vidhyacharan Bhaskar.csv")
 data_Bhaskar = dataset_Bhaskar.iloc[:,1:2].values
 Bhaskar = str(listToString(data_Bhaskar))
 blob_Bhaskar = TextBlob(Bhaskar)
 
-dataset_Frid = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Yelena Frid.csv")
+dataset_Frid = pd.read_csv("C:\\Users\\rmp_Yelena Frid.csv")
 data_Frid = dataset_Frid.iloc[:,1:2].values
 Frid = str(listToString(data_Frid))
 blob_Frid = TextBlob(Frid)
 
-dataset_Shafiq = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Zubair Shafiq.csv")
+dataset_Shafiq = pd.read_csv("C:\\Usersn\\rmp_Zubair Shafiq.csv")
 data_Shafiq = dataset_Shafiq.iloc[:,1:2].values
 Shafiq = str(listToString(data_Shafiq))
 blob_Shafiq = TextBlob(Shafiq)
