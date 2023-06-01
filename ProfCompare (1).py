@@ -57,7 +57,7 @@ data_Stevens = dataset_Stevens.iloc[:,1:2].values
 Stevens = str(listToString(data_Stevens))
 blob_Stevens = TextBlob(Stevens)
 
-dataset_Eiselt = pd.read_csv("C:\\Users\\mysor\\Heron\\rmp_Kurt Eiselt.csv")
+dataset_Eiselt = pd.read_csv("C:\\Users\\rmp_Kurt Eiselt.csv")
 data_Eiselt = dataset_Eiselt.iloc[:,1:2].values
 Eiselt = str(listToString(data_Eiselt))
 blob_Eiselt = TextBlob(Eiselt)
