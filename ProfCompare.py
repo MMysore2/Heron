@@ -26,6 +26,14 @@ def listToString(s):
     # return string
     return str1
 
+# Each of these gets the comments for a professor and turns it into a list of comments in string format.
+# If you want to add your own professor, copy a chunk, replace the variable names, and add the path name.
+# For example, if you had a professor named John Smith, his chunk might look like this:
+
+# dataset_Smith = pd.read_csv("C:\\Users\\rmp_John Smith.csv")
+# data_Smith = dataset_Smith.iloc[:,1:2].values
+# Smith = str(listToString(data_Smith))
+# blob_Smith = TextBlob(Smith)
 
 dataset_Butner = pd.read_csv("C:\\Users\\rmp_butner.csv")
 data_Butner = dataset_Butner.iloc[:,1:2].values
@@ -98,11 +106,18 @@ Shafiq = str(listToString(data_Shafiq))
 blob_Shafiq = TextBlob(Shafiq)
 
 
+# If you create a professor or remove one, make sure to also do so here.
+# For example, if you add a Professor John Smith, make sure to add ", *data_Smith" somewhere in this list.
+
 data_cs = [*data_Butner, *data_Solares, *data_Posnett, *data_Wu, *data_Porquet, *data_Stevens, *data_Eiselt, *data_Ma, *data_Franklin, *data_Sadoghi, *data_Rafatirad, *data_Bhaskar, *data_Frid, *data_Shafiq]
 cs = str(listToString(data_cs))
 blob_cs = TextBlob(cs)
 
 
+# If you use your own professors, you would have to rank them yourself
+# For example, if you used Professor John Smith:
+# print(blob_Smith.sentiment.polarity)
+# should print the sentiment analysis for him
 
 print("Overall Sentiment:", blob_cs.sentiment.polarity)
 print()
@@ -122,7 +137,7 @@ print("12. Vidhyacharan Bhaskar:", blob_Bhaskar.sentiment.polarity)
 print("13. Kwan-Liu Ma:", blob_Ma.sentiment.polarity)
 print("14. Matthew Franklin:", blob_Franklin.sentiment.polarity)
 
-
+# This segment creates visuals
 positive = []
 positiveVals = []
 neutral = []
@@ -136,11 +151,11 @@ for i in range (len(data_cs)):
     blob_round = round(blob.sentiment.polarity * 10)/10
     allVals.append(blob.sentiment.polarity)
     
-    if blob_round > 0.3:
+    if blob_round > 0.15:
         positive.append(i)
         positiveVals.append(round(blob.sentiment.polarity * 10)/10)
     
-    elif blob_round < -0.3:
+    elif blob_round < -0.15:
         negative.append(i)
         negativeVals.append(round(blob.sentiment.polarity * 10)/10)
     
